@@ -16,16 +16,15 @@
         <h1>Conversor DecBin</h1>
     </head>
     <main>
-        <form>
             <legend class="sr-only"> Conversor Binário para Decimal</legend>
             <fieldset>
                 <label for="binario" class="sr-only">Binário</label>
                 <input type="text" id="binario" name="binario" title="Binário" placeholder="Número Binário" alt="Resultado Binario" readonly >
                 <label for="decimal" class="sr-only">Decimal</label>
                 <input type="number" id="decimal" name="decimal" alt="Insira um número decimal" tittle="Decimal" placeholder="Insira um número" inputmode="numeric" autofocus onchange="generate()" >
-                <button type="submit" id="copy">Copiar!</button>
+                <button type="submit" id="copy" onclick="clipBoard()">Copiar!</button>
             </fieldset>
-        </form>
+
         <img src="vector-creator2.png">
     </main>
     <footer>

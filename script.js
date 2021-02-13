@@ -53,9 +53,9 @@ function revert(s){
     return s.split('').reverse('').join('');
 }
 
-function myFunction() {
+function clipBoard() {
   /* Get the text field */
-  var copyText = document.getElementById("copy");
+  var copyText = document.getElementById("binario");
   copyText.select();
   copyText.setSelectionRange(0, 99999); /* For mobile devices */
   document.execCommand("copy");
