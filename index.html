@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+<link rel="icon" href="vector-creator2.png">
+    <title>DecBin</title>
+</head>
+<body onload="Theme()">
+    <head>
+        <h1>Consersor DecBin</h1>
+    </head>
+    <main>
+        <form action="#">
+            <legend class="sr-only"> Conversor Binário para Decimal</legend>
+            <fieldset>
+                <label for="binario" class="sr-only">Binário</label>
+                <input type="number" id="binario" name="binario" title="Binário" placeholder="Número Binário" alt="Resultado Binario" readonly >
+                <label for="decimal" class="sr-only">Decimal</label>
+                <input type="number" id="decimal" name="decimal" alt="Insira um número decimal" tittle="Decimal" placeholder="Insira um número" inputmode="numeric" autofocus >
+                <button type="submit">Copiar!</button>
+            </fieldset>
+        </form>
+        <img src="vector-creator2.png">
+    </main>
+    <footer>
+        <a href="http://github.com/shymarrai">GitHub</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
