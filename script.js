@@ -17,14 +17,38 @@ function Theme(){
   //  --darkbrown: rgb(10, 93, 107);
   //  --darkgreen: rgb(4, 41, 44);
   //  --darkwhite: #000;
-    var padrao1 = ["rgb(82, 82, 252)","rgb(255, 254, 170)","rgb(19, 187, 199)","#fff"]
+
+
+    //  var padrao1 = ["rgb(82, 82, 252)","rgb(34, 16, 16,.2)","rgb(19, 187, 199)","#fff"] roxo
     var padrao2 = ["rgb(3, 1, 29)","rgb(93, 218, 240)","rgb(4, 41, 44)","#fff"]
-    var padrao3 = ["rgb(154, 255, 213)","rgb(10, 93, 107)","rgb(4, 41, 44)","#000"]
+   var padrao3 = ["rgb(154, 255, 213)","rgb(10, 93, 107)","rgb(4, 41, 44)","#000"]
+   var padrao1 = ["rgb(241,233,208)","rgb(27,25,22)","rgb(233,59,38)","#000"]
     var padrao = [padrao1,padrao2,padrao3]
     getPadrao = padrao[Math.floor(Math.random()*padrao.length)]
-    console.log(getPadrao)
-    document.documentElement.style.setProperty('--darkblue', getPadrao[0]);
-    document.documentElement.style.setProperty('--darkbrown', getPadrao[1]);
-    document.documentElement.style.setProperty('--darkgreen', getPadrao[2]);
-    document.documentElement.style.setProperty('--darkwhite', getPadrao[3]);
+
+    document.documentElement.style.setProperty('--darkblue', getPadrao[0]); // fundo
+    document.documentElement.style.setProperty('--darkbrown', getPadrao[1]); // fieldset
+   document.documentElement.style.setProperty('--darkgreen',getPadrao[2]); // bordas
+    document.documentElement.style.setProperty('--darkwhite', getPadrao[3]); // titulo
+}
+
+function generate(){
+    var n = document.getElementById("decimal").value;
+    var bin = "";
+    var c = n;
+    var number = 0;
+    while(c >= 0){
+        number = Math.floor(n%2);
+        n = n/2;
+        bin += number;
+        c--;
+        
+    }
+    
+    //return console.log(revert(bin))
+   return   document.getElementById("binario").value = revert(bin);
+    
+}
+function revert(s){
+    return s.split('').reverse('').join('');
 }

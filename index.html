@@ -18,9 +18,9 @@
             <legend class="sr-only"> Conversor Binário para Decimal</legend>
             <fieldset>
                 <label for="binario" class="sr-only">Binário</label>
-                <input type="number" id="binario" name="binario" title="Binário" placeholder="Número Binário" alt="Resultado Binario" readonly >
+                <input type="text" id="binario" name="binario" title="Binário" placeholder="Número Binário" alt="Resultado Binario" readonly >
                 <label for="decimal" class="sr-only">Decimal</label>
-                <input type="number" id="decimal" name="decimal" alt="Insira um número decimal" tittle="Decimal" placeholder="Insira um número" inputmode="numeric" autofocus >
+                <input type="number" id="decimal" name="decimal" alt="Insira um número decimal" tittle="Decimal" placeholder="Insira um número" inputmode="numeric" autofocus onchange="generate()" >
                 <button type="submit">Copiar!</button>
             </fieldset>
         </form>
