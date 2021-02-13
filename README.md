@@ -16,18 +16,14 @@ DecBin - Conversor de Decimal para Binário #7DaysProjects
 
 # Exemplos
 <details>
-<summary>Desktop</summary>
-
-</details>
-
+<summary>Desktop🖥💻</summary>
 ![screenshot](screenshot.jpg)
 ![screenshot](screenshot2.jpg)
 ![screenshot](screenshot3.jpg)
-
-
+</details>
 
 <details>
-<summary>Mobile</summary>
+<summary>Mobile📱</summary>
 ![screenshot](screenshot4.jpg)
 ![screenshot](screenshot5.jpg)
 ![screenshot](screenshot6.jpg)
