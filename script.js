@@ -45,16 +45,16 @@ function generate(){
 		
 	}
 		if(opt == "decbin"){
-			
+			document.getElementById("subtitle").innerHTML = "Bin"
 			return document.getElementById("resultado").value = bin(n);
 			
 			
 		}else if(opt == "dechex"){
-			
+			document.getElementById("subtitle").innerHTML = "Hex"
 			return document.getElementById("resultado").value = hex(n);
 			
 		}else if(opt == "decoct"){
-			
+			document.getElementById("subtitle").innerHTML = "Oct"
 			return document.getElementById("resultado").value = oct(n);
 			
 		}
