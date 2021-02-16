@@ -26,10 +26,24 @@
     </header>
     <main>
             <fieldset>
-                <label for="binario" class="sr-only">Binário</label>
-                <input type="text" id="binario" name="binario" placeholder="Número Binário" readonly >
-                <label for="decimal" class="sr-only">Decimal</label>
-                <input type="number" id="decimal" name="decimal" placeholder="Insira um número" autofocus onchange="generate()" >
+				<div class="container">
+					<input class="switch" onclick="generate()" type="radio" id="decbin" name="switch" value="decbin" checked>
+					<label  for="decbin"  >Dec-Bin</label>
+					
+					<input class="switch" onclick="generate()" type="radio" id="dechex" name="switch" value="dechex">
+					<label for="dechex" >Dec-Hex</label>
+					
+					<input class="switch" onclick="generate()" type="radio" id="decoct" name="switch" value="decoct">
+					<label for="decoct" >Dec-Oct</label><br>
+				</div>
+				
+				<!-- CONVERSÃO-->
+                <label for="resultado" class="sr-only">Resultado</label>
+                <input type="text" id="resultado" name="resultado" placeholder="Resultado" readonly >
+				
+                <label for="valor" class="sr-only">Valor a converter</label>
+                <input type="number" id="valor" name="valor" placeholder="Insira um valor" autofocus onchange="generate()">
+				
                 <button type="submit" id="copy" onclick="clipBoard()">Copiar!</button>
             </fieldset>
 
