@@ -1,4 +1,3 @@
-
 function Theme(){
     //    padrao 1
     // --darkblue: rgb(82, 82, 252);
@@ -34,29 +33,7 @@ function Theme(){
 
 function generate(){
     var n = document.getElementById("decimal").value;
-    var bin = "";
-    var c = n;
-    var number = 0;
-    while(c >= 0){
-        number = Math.floor(n%2);
-        n = n/2;
-        bin += number;
-        c--;
-        
-    }
+   	n = (n >>> 0).toString(2); 
+	document.getElementById("binario").value = n;
     
-    //return console.log(revert(bin))
-   return   document.getElementById("binario").value = revert(bin);
-    
-}
-function revert(s){
-    return s.split('').reverse('').join('');
-}
-
-function clipBoard() {
-  /* Get the text field */
-  var copyText = document.getElementById("binario");
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); /* For mobile devices */
-  document.execCommand("copy");
 }
