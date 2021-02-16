@@ -111,6 +111,6 @@ function clipBoard() {
   var copyText = document.getElementById("resultado");
   copyText.select();
   copyText.setSelectionRange(0, 99999); /* For mobile devices */
-  document.execCommand("resultado");
+  document.execCommand("copy");
 }
 
