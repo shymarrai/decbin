@@ -107,7 +107,7 @@ function generate(){
 	return n;
 }
 
-function myFunction() {
+function clipBoard() {
   /* Get the text field */
   var copyText = document.getElementById("resultado");
   copyText.select();
